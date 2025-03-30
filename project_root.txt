@@ -1,0 +1,36 @@
+.
+├── log.txt                # 输出日志
+├── main.py                # 主程序入口
+├── README.md              # 项目说明文档
+├── requirements.txt       # python依赖库
+├── setting.py             # 基础配置文件
+│
+├── core
+│   ├── device.py          # 设备管理库
+│   ├── __init__.py
+│   │
+│   ├── game
+│   │   ├── jjc.py         # jjc库
+│   │   ├── scan_inventory.py  # 角色识别器
+│   │   └── __init__.py
+│   │
+│   └── templates
+│       ├── game_templates.py  # 游戏模板
+│       └── __init__.py
+│
+├── static
+│   ├── pcr_db.json        # pcr数据库
+│   │
+│   └── images
+│       ├── avatar/        # 存放游戏角色头像，包含大量角色1星/3星/6星及各种皮肤版本的PNG图片
+│       ├── button/        # 存放UI按钮图片(主菜单.png, 冒险.png, 大家的训练场.png等)
+│       └── ui/            # 存放pcr各种ui界面图
+│
+└── utils
+    ├── adb.py             # adb工具
+    ├── avatar_detector.py # 角色识别工具
+    ├── env_check.py       # 环境工具
+    ├── game.py            # 游戏工具
+    ├── logger.py          # 日志工具
+    ├── navigate.py        # 导航工具
+    └── __init__.py
